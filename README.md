@@ -20,7 +20,7 @@ Key files:
 - Create, update, delete tasks
 - Filter and search tasks
 - Task priorities (low / medium / high) and visual priority coloring
-- Task status management: `pending`, `in-progress`, `completed` (toggle from UI)
+- Task status management: `pending`,  `completed` (toggle from UI)
 - User auth (login/register) with protected routes
 
 ---
@@ -91,7 +91,8 @@ Important task endpoints (see `backend/routes/tasks.js` / `backend/controllers/t
 - `GET /api/tasks/:id` — get single task
 - `PUT /api/tasks/:id` — update task
 - `DELETE /api/tasks/:id` — delete task
-- `PATCH /api/tasks/:id/status` — update status (body: `{ status: 'pending'|'in-progress'|'completed' }`)
+- `PATCH /api/tasks/:id/status` — update status (body: `{ status: 'pending'
+- |'completed' }`)
 - `PATCH /api/tasks/:id/priority` — update priority (body: `{ priority: 'low'|'medium'|'high' }`)
 
 Auth endpoints are under `backend/routes/auth.js` (login / register). Routes are protected by middleware in `backend/middleware/auth.js`.
